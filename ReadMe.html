@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>WA LD KML Read Me</title>
+</head>
+
+<body>
+
+<h3>Washington LD KML Files</h3>
+<p>There is a KML file for each legislative district, named vt53_&lt;n&gt;.kml, where
+<em><strong>n</strong></em> is the LD number. Each file contains shapes for all 
+precincts in the LD, including split precincts partially in the LD, colored with 
+11 different colors, ordered alphabetically. The overall LD shape with no fill 
+is also included. Each precinct lists the total population and voter age 
+population (VAP).<br />
+<br />
+The KMLs work well in Google Earth (download at
+<a href="http://earth.google.com">http://earth.google.com</a>). They can be 
+loaded in Google Maps, but because there are so many polygons, Google Maps will 
+divide the polygons into 4 to 10 sections, so you cannot view them all at once.<br />
+<br />
+All of these were produced by a tool I authored. Inputs are<br />
+- Precinct shapefiles (from Census 2010)<br />
+- Precinct population info (from Census 2010)<br />
+- Census block to precinct mapping info (from Census 2010)<br />
+- Block equivalency file (FINALLEG2011.txt) (from the state redistricting 
+commission)<br />
+- LD District KML (FINAL_LEGISLATIVE_PLAN_2011.kmz) (from the state 
+redistricting commission)<br />
+The tool also reduces the polygon complexity somewhat using the Douglas-Peucker 
+algorithm.<br />
+<br />
+Please contact me with questions or comments. Thanks.</p>
+<p>Dave Bradlee<br />
+Seattle, WA<br />
+<a href="http://gardow.com/davebradlee">http://gardow.com/davebradlee</a><br />
+<a href="mailto:redistricting@gardow.com">redistricting@gardow.com</a></p>
+
+</body>
+
+</html>
